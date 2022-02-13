@@ -1,0 +1,56 @@
+.container-contact {
+    width: 100%;
+    background-image: url('../../assets/email-bg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    .contact-wrapper {
+        max-width: $max-width;
+        margin: 0 auto;
+        padding: 3rem;
+
+        .contact-content {
+            width: 375px;
+            display: flex;
+            flex-direction: column;
+            @media screen and (max-width: $sm) {
+                width: 100%;
+            }
+
+
+            h3 {
+                font-size: 3.75rem;
+                font-weight: 400;
+                font-family: $font-family-1;
+                margin-bottom: 2rem;
+                @media screen and (max-width: $sm) {
+                    font-size: 2.5rem;
+                }
+            }
+
+            input {
+                border: 2px solid #ffffff;
+                padding: 10px 12px;
+                margin-bottom: .5rem;
+            }
+
+            .btn {
+                padding: 10px;
+                font-family: $font-family-2;
+                color: $text-color-1;
+                background-color: $bg-color-2;
+                letter-spacing: 1px;
+                border-style: none;
+                font-weight: 700;
+                text-transform: uppercase;
+
+                &:hover {
+                    background-color: $bg-color-8;
+                }
+            }
+        }
+
+    }
+
+}

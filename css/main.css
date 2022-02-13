@@ -132,3 +132,44 @@ h1, h2, h3, h4, h5, h6, p {
       background-color: #d01e55; }
     .container-info .info-wrapper .item-3 {
       background-color: #292e33; }
+
+.container-contact {
+  width: 100%;
+  background-image: url("../../assets/email-bg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+  .container-contact .contact-wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 3rem; }
+    .container-contact .contact-wrapper .contact-content {
+      width: 375px;
+      display: flex;
+      flex-direction: column; }
+      @media screen and (max-width: 576px) {
+        .container-contact .contact-wrapper .contact-content {
+          width: 100%; } }
+      .container-contact .contact-wrapper .contact-content h3 {
+        font-size: 3.75rem;
+        font-weight: 400;
+        font-family: "Montserrat", sans-serif;
+        margin-bottom: 2rem; }
+        @media screen and (max-width: 576px) {
+          .container-contact .contact-wrapper .contact-content h3 {
+            font-size: 2.5rem; } }
+      .container-contact .contact-wrapper .contact-content input {
+        border: 2px solid #ffffff;
+        padding: 10px 12px;
+        margin-bottom: .5rem; }
+      .container-contact .contact-wrapper .contact-content .btn {
+        padding: 10px;
+        font-family: "Open Sans", sans-serif;
+        color: #ffffff;
+        background-color: #6a4aa1;
+        letter-spacing: 1px;
+        border-style: none;
+        font-weight: 700;
+        text-transform: uppercase; }
+        .container-contact .contact-wrapper .contact-content .btn:hover {
+          background-color: #000000; }
