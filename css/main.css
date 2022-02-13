@@ -1,0 +1,134 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: normal; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6, p {
+  word-wrap: break-word; }
+
+.btn {
+  background-image: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1rem;
+  border-style: none;
+  font-weight: 700;
+  padding: 16px 42px 16px 52px; }
+
+.container-main {
+  width: 100%;
+  background-image: url("../../assets/main-bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%; }
+  .container-main .main-wrapper {
+    padding: 3rem 3rem;
+    max-width: 1140px;
+    min-height: calc(725px - 6rem);
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    @media screen and (max-width: 768px) {
+      .container-main .main-wrapper {
+        align-items: center;
+        justify-content: center; } }
+    @media screen and (max-width: 576px) {
+      .container-main .main-wrapper {
+        min-height: 325px; } }
+    .container-main .main-wrapper .main-content {
+      width: 400px;
+      height: fit-content;
+      color: #ffffff;
+      font-family: "Montserrat", sans-serif; }
+      .container-main .main-wrapper .main-content h1 {
+        font-weight: 700;
+        font-size: 6rem; }
+        @media screen and (max-width: 768px) {
+          .container-main .main-wrapper .main-content h1 {
+            font-size: 4.5rem; } }
+      .container-main .main-wrapper .main-content h6 {
+        font-weight: 700;
+        font-size: 1.125rem;
+        line-height: 1.2;
+        margin-top: 1.125rem; }
+      .container-main .main-wrapper .main-content p {
+        font-family: "Open Sans", sans-serif;
+        margin-top: 1.125rem; }
+      .container-main .main-wrapper .main-content .btn {
+        margin-top: 1.5rem;
+        background-color: #ffffff;
+        color: #6a4aa1;
+        font-family: "PT Sans", sans-serif; }
+        .container-main .main-wrapper .main-content .btn:hover {
+          background-color: #af94de;
+          color: #ffffff; }
+
+.container-info {
+  width: 100%; }
+  .container-info .info-wrapper {
+    margin: 0 auto;
+    max-width: 1140px;
+    padding: 3rem 1rem;
+    font-family: "Open Sans", sans-serif;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    gap: 1rem; }
+    @media screen and (max-width: 992px) {
+      .container-info .info-wrapper {
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        padding: 3rem; } }
+    @media screen and (max-width: 576px) {
+      .container-info .info-wrapper {
+        grid-template-columns: repeat(1, minmax(100px, 1fr));
+        padding: 3rem; } }
+    .container-info .info-wrapper .info-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .container-info .info-wrapper .info-content h3 {
+        font-size: 36px;
+        line-height: 1.1;
+        font-weight: 700; }
+      .container-info .info-wrapper .info-content p {
+        margin: 1.25rem 0;
+        font-family: "Open Sans", sans-serif; }
+      .container-info .info-wrapper .info-content .btn {
+        width: fit-content;
+        background-color: #292e33;
+        color: #ffffff; }
+        .container-info .info-wrapper .info-content .btn:hover {
+          background-color: #4d4d4d; }
+    .container-info .info-wrapper .card {
+      border: 1px solid black;
+      color: #ffffff;
+      min-height: 325px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .container-info .info-wrapper .card img {
+        width: 49px;
+        height: 49px;
+        margin: 0 auto; }
+      .container-info .info-wrapper .card h3 {
+        font-size: 1.5rem;
+        font-family: "Montserrat", sans-serif;
+        line-height: 1.2;
+        font-weight: 700;
+        text-align: center;
+        margin: 1.5rem 0; }
+      .container-info .info-wrapper .card p {
+        font-family: "Open Sans", sans-serif;
+        text-align: center;
+        margin: 0 2rem; }
+    .container-info .info-wrapper .item-1 {
+      background-color: #6a4aa1; }
+    .container-info .info-wrapper .item-2 {
+      background-color: #d01e55; }
+    .container-info .info-wrapper .item-3 {
+      background-color: #292e33; }

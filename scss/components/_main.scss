@@ -1,0 +1,66 @@
+.container-main {
+    width: 100%;
+    background-image: url('../../assets/main-bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    
+
+    .main-wrapper {
+        padding: 3rem 3rem;
+        max-width: $max-width;
+        min-height: calc(725px - 6rem);
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        @media screen and (max-width: $md) {
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media screen and (max-width: $sm) {
+            min-height: 325px;
+        }
+
+        .main-content {
+            width: 400px;
+            height: fit-content;
+            color: $text-color-1;
+            font-family: $font-family-1;
+
+            h1 {
+                font-weight: 700;
+                font-size: 6rem;
+                @media screen and (max-width: $md) {
+                    font-size: 4.5rem;
+                }
+            }
+
+            h6 {
+                font-weight: 700;
+                font-size: 1.125rem;
+                line-height: 1.2;
+                margin-top: 1.125rem;
+            }
+
+            p {
+                font-family: $font-family-2;
+                margin-top: 1.125rem;
+            }
+
+            .btn {
+                margin-top: 1.5rem;
+                background-color: $bg-color-1;
+                color: $text-color-2;
+                font-family: $font-family-3;
+
+                &:hover {
+                    background-color: $bg-color-5;
+                    color: $text-color-1;
+                }
+            }
+
+        }
+    }
+}

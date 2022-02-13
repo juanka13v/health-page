@@ -1,0 +1,93 @@
+.container-info {
+    width: 100%;
+
+    .info-wrapper {
+        margin: 0 auto;
+        max-width: $max-width;
+        padding: 3rem 1rem;
+
+        font-family: $font-family-2;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(100px, 1fr));
+        gap: 1rem;
+
+        @media screen and (max-width: $lg) {
+            grid-template-columns: repeat(2, minmax(100px, 1fr));
+            padding: 3rem;
+        }
+
+        @media screen and (max-width: $sm) {
+            grid-template-columns: repeat(1, minmax(100px, 1fr));
+            padding: 3rem;
+        }
+
+        .info-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h3 {
+                font-size: 36px;
+                line-height: 1.1;
+                font-weight: 700;
+            }
+            
+            p {
+                margin: 1.25rem 0;
+                font-family: $font-family-2;
+            }
+
+            .btn {
+                width: fit-content;
+                background-color: $bg-color-3;
+                color: $text-color-1;
+
+                &:hover {
+                    background-color: $bg-color-7;
+                }
+            }
+        }
+
+        .card {
+            border: 1px solid black;
+            color: $text-color-1;
+            min-height: 325px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            img {
+                width: 49px;
+                height: 49px;
+                margin: 0 auto;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                font-family: $font-family-1;
+                line-height: 1.2;
+                font-weight: 700;
+                text-align: center;
+                margin: 1.5rem 0;
+            }
+
+            p {
+                font-family: $font-family-2;
+                text-align: center;
+                margin: 0 2rem;
+            }
+        }
+
+        .item-1 {
+            background-color: $bg-color-2;
+        }
+
+        .item-2 {
+            background-color: $bg-color-4;
+        }
+
+        .item-3 {
+            background-color: $bg-color-3;
+        }
+    }
+}
