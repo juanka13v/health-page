@@ -1,0 +1,90 @@
+.container-tips {
+    width: 100%;
+    background-color: $bg-color-2;
+
+    .tips-wrapper {
+        max-width: $max-width;
+        margin: 0 auto;
+        padding: 3rem;
+        font-family: $font-family-1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        min-height: 678px;
+        @media screen and (max-width: $lg) {
+            padding: 1rem;
+        }
+
+        .tips-title {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            @media screen and (max-width: $lg) {
+                margin: 2.5rem 0 3rem 0;
+            }
+
+            h3 {
+                text-align: center;
+                font-weight: 700;
+                font-size: 2.5rem;
+                color: $text-color-1;
+                
+            }
+        }
+
+        .tips-items {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(100px, 1fr));
+            gap: 3rem 1rem;
+            
+            @media screen and (max-width: $lg) {
+                grid-template-columns: repeat(2, minmax(100px, 1fr));
+                gap: 3rem 1rem;
+                place-items: center;
+            }
+
+            @media screen and (max-width: $sm) {
+                grid-template-columns: repeat(1, minmax(100px, 1fr));
+                gap: 3rem ;
+                place-items: center;
+            }
+    
+
+            .tip-item {
+                color: $text-color-1;
+                display: flex;
+
+
+                .tip-img {
+                    flex: 2;
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        margin-top: 5px;
+                        width: 48px;
+                        height: 48px;
+                    }
+                }
+
+                .tip-content {
+                    flex: 7;
+                    display: flex;
+                    flex-direction: column;
+
+                    h4 {
+                        font-weight: 700;
+                        font-size: 1.25rem;
+                        line-height: 1.2;
+                    }
+
+                    p {
+                        margin-top: 2rem;
+                        font-family: $font-family-2;
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+}
