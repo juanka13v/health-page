@@ -245,72 +245,116 @@ h1, h2, h3, h4, h5, h6, p {
   .container-info_tips .info_tips-wrapper {
     max-width: 1140px;
     margin: 0 auto;
-    padding: 3rem;
-    position: relative; }
+    padding: 3rem 0;
+    position: relative;
+    display: flex; }
+    @media screen and (max-width: 992px) {
+      .container-info_tips .info_tips-wrapper {
+        flex-direction: column; } }
+    @media screen and (max-width: 576px) {
+      .container-info_tips .info_tips-wrapper {
+        padding: 3rem 1rem; } }
     .container-info_tips .info_tips-wrapper .info_tips-imgs {
-      display: flex; }
+      flex: 6;
+      display: flex;
+      position: relative;
+      z-index: 10;
+      justify-content: center;
+      align-items: center; }
       .container-info_tips .info_tips-wrapper .info_tips-imgs img {
+        margin: 5rem 0;
         width: 100%;
         height: 100%;
-        max-width: 550px;
-        max-height: 550px;
+        max-width: 450px;
+        max-height: 450px;
         object-position: 50% 50%;
         object-fit: cover;
         border-radius: 50%; }
-    .container-info_tips .info_tips-wrapper .circle-1 {
-      display: block;
-      position: absolute;
-      top: 50%;
-      right: 1rem;
-      width: 228px;
-      height: 228px;
-      border-radius: 50%;
-      background-color: #af94de;
-      align-self: flex-end; }
-    .container-info_tips .info_tips-wrapper .circle-2 {
-      display: block;
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      background-color: #f36994;
-      align-self: center; }
-    .container-info_tips .info_tips-wrapper .info_tips-content {
-      position: absolute;
-      right: 1rem;
-      top: 2.5rem;
-      width: 350px;
-      min-height: 272px;
+        @media screen and (max-width: 992px) {
+          .container-info_tips .info_tips-wrapper .info_tips-imgs img {
+            margin: 2.5rem 0 4rem 0; } }
+        @media screen and (max-width: 576px) {
+          .container-info_tips .info_tips-wrapper .info_tips-imgs img {
+            max-width: 350px;
+            max-height: 350px; } }
+      .container-info_tips .info_tips-wrapper .info_tips-imgs .circle-1 {
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 178px;
+        height: 178px;
+        border-radius: 50%;
+        background-color: #af94de; }
+        @media screen and (max-width: 992px) {
+          .container-info_tips .info_tips-wrapper .info_tips-imgs .circle-1 {
+            right: 2rem;
+            left: initial; } }
+        @media screen and (max-width: 768px) {
+          .container-info_tips .info_tips-wrapper .info_tips-imgs .circle-1 {
+            right: 0;
+            width: 138px;
+            height: 138px; } }
+        @media screen and (max-width: 576px) {
+          .container-info_tips .info_tips-wrapper .info_tips-imgs .circle-1 {
+            right: 0;
+            width: 78px;
+            height: 78px; } }
+      .container-info_tips .info_tips-wrapper .info_tips-imgs .circle-2 {
+        display: block;
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #f36994; }
+        @media screen and (max-width: 992px) {
+          .container-info_tips .info_tips-wrapper .info_tips-imgs .circle-2 {
+            left: 2rem; } }
+        @media screen and (max-width: 576px) {
+          .container-info_tips .info_tips-wrapper .info_tips-imgs .circle-2 {
+            left: 0;
+            width: 78px;
+            height: 78px; } }
+    .container-info_tips .info_tips-wrapper .info_tips-contents {
+      margin: 3rem 0 0 0;
+      flex: 4;
       display: flex;
-      flex-direction: column; }
-      .container-info_tips .info_tips-wrapper .info_tips-content p {
-        font-family: "Open Sans", sans-serif;
-        color: #111111; }
-      .container-info_tips .info_tips-wrapper .info_tips-content span {
-        font-family: "Open Sans", sans-serif;
-        color: #111111;
-        margin-top: 22px; }
-        .container-info_tips .info_tips-wrapper .info_tips-content span a {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .container-info_tips .info_tips-wrapper .info_tips-contents .info_tips-content {
+        margin-top: 2rem;
+        min-height: 272px;
+        max-width: 450px;
+        display: flex;
+        flex-direction: column; }
+        .container-info_tips .info_tips-wrapper .info_tips-contents .info_tips-content p {
+          font-family: "Open Sans", sans-serif;
           color: #111111; }
-      .container-info_tips .info_tips-wrapper .info_tips-content .btn {
-        width: fit-content;
-        background-color: #6a4aa1;
-        color: #ffffff;
-        cursor: pointer;
-        margin-top: 20px; }
-        .container-info_tips .info_tips-wrapper .info_tips-content .btn:hover {
-          background-color: #4d4d4d; }
-    .container-info_tips .info_tips-wrapper .info_tips-title {
-      position: absolute;
-      right: 0;
-      bottom: 3rem;
-      width: 450px;
-      display: flex;
-      justify-content: center; }
-      .container-info_tips .info_tips-wrapper .info_tips-title h3 {
-        font-weight: 700;
-        line-height: 1.1;
-        font-size: 3rem;
-        font-family: "Montserrat", sans-serif; }
+        .container-info_tips .info_tips-wrapper .info_tips-contents .info_tips-content span {
+          font-family: "Open Sans", sans-serif;
+          color: #111111;
+          margin-top: 22px; }
+          .container-info_tips .info_tips-wrapper .info_tips-contents .info_tips-content span a {
+            color: #111111; }
+        .container-info_tips .info_tips-wrapper .info_tips-contents .info_tips-content .btn {
+          width: fit-content;
+          background-color: #6a4aa1;
+          color: #ffffff;
+          cursor: pointer;
+          margin-top: 20px; }
+          .container-info_tips .info_tips-wrapper .info_tips-contents .info_tips-content .btn:hover {
+            background-color: #4d4d4d; }
+      .container-info_tips .info_tips-wrapper .info_tips-contents .info_tips-title {
+        max-width: 450px;
+        display: flex;
+        justify-content: center; }
+        .container-info_tips .info_tips-wrapper .info_tips-contents .info_tips-title h3 {
+          font-weight: 700;
+          line-height: 1.1;
+          font-size: 3rem;
+          font-family: "Montserrat", sans-serif; }
