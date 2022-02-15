@@ -358,3 +358,80 @@ h1, h2, h3, h4, h5, h6, p {
           line-height: 1.1;
           font-size: 3rem;
           font-family: "Montserrat", sans-serif; }
+
+.container-span_1 {
+  width: 100%;
+  background-color: #e5e5e5; }
+  .container-span_1 .span_1-wrapper {
+    max-width: 1140px;
+    padding: 7rem 5rem;
+    margin: 0 auto; }
+    @media screen and (max-width: 992px) {
+      .container-span_1 .span_1-wrapper {
+        padding: 7rem 2rem; } }
+    @media screen and (max-width: 420px) {
+      .container-span_1 .span_1-wrapper {
+        padding: 5rem 0; } }
+    .container-span_1 .span_1-wrapper .span_1-content {
+      background-color: #ffffff;
+      display: flex;
+      gap: 2rem; }
+      @media screen and (max-width: 992px) {
+        .container-span_1 .span_1-wrapper .span_1-content {
+          gap: 0; } }
+      @media screen and (max-width: 768px) {
+        .container-span_1 .span_1-wrapper .span_1-content {
+          flex-direction: column; } }
+      .container-span_1 .span_1-wrapper .span_1-content .span_1-text {
+        padding: 2rem 3rem;
+        display: flex;
+        flex-direction: column;
+        flex: 4;
+        color: #111111; }
+        @media screen and (max-width: 992px) {
+          .container-span_1 .span_1-wrapper .span_1-content .span_1-text {
+            padding: 2rem;
+            flex: 5; } }
+        .container-span_1 .span_1-wrapper .span_1-content .span_1-text h3 {
+          font-size: 2.25rem;
+          font-weight: 700;
+          line-height: 1.1; }
+        .container-span_1 .span_1-wrapper .span_1-content .span_1-text p {
+          font-family: "Open Sans", sans-serif;
+          line-height: 1.8;
+          margin: 2rem 0; }
+        .container-span_1 .span_1-wrapper .span_1-content .span_1-text span {
+          font-size: 1rem; }
+          .container-span_1 .span_1-wrapper .span_1-content .span_1-text span a {
+            color: #111111; }
+        .container-span_1 .span_1-wrapper .span_1-content .span_1-text .btn {
+          width: fit-content;
+          background-color: #292e33;
+          color: #ffffff;
+          cursor: pointer;
+          margin-top: 2rem; }
+          .container-span_1 .span_1-wrapper .span_1-content .span_1-text .btn:hover {
+            background-color: #4d4d4d; }
+      .container-span_1 .span_1-wrapper .span_1-content .span_1-img {
+        flex: 6;
+        background-image: url("../../assets/question-2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        position: relative; }
+        @media screen and (max-width: 992px) {
+          .container-span_1 .span_1-wrapper .span_1-content .span_1-img {
+            flex: 5; } }
+        @media screen and (max-width: 768px) {
+          .container-span_1 .span_1-wrapper .span_1-content .span_1-img {
+            min-height: 400px; } }
+        .container-span_1 .span_1-wrapper .span_1-content .span_1-img .circle-3 {
+          display: block;
+          width: 200px;
+          height: 200px;
+          background-color: #ffffff;
+          border: 12px solid #e5e5e5;
+          border-radius: 50%;
+          position: absolute;
+          bottom: -70px;
+          right: -70px; }
