@@ -363,6 +363,7 @@ h1, h2, h3, h4, h5, h6, p {
   width: 100%;
   background-color: #e5e5e5; }
   .container-span_1 .span_1-wrapper {
+    overflow: hidden;
     max-width: 1140px;
     padding: 7rem 5rem;
     margin: 0 auto; }
@@ -435,3 +436,176 @@ h1, h2, h3, h4, h5, h6, p {
           position: absolute;
           bottom: -70px;
           right: -70px; }
+
+.container-gallery {
+  width: 100%; }
+  .container-gallery .gallery-wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 4rem 2rem; }
+    .container-gallery .gallery-wrapper .gallery-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .container-gallery .gallery-wrapper .gallery-title h3 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 3.25rem;
+        font-weight: 700;
+        line-height: 1.1;
+        color: #6a4aa1;
+        text-align: center; }
+      .container-gallery .gallery-wrapper .gallery-title p {
+        font-family: "Open Sans", sans-serif;
+        font-style: italic;
+        text-align: center;
+        margin-top: 1rem;
+        color: #111111;
+        margin-bottom: 3rem; }
+    .container-gallery .gallery-wrapper .gallery-content {
+      min-height: 670px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 26px; }
+      @media screen and (max-width: 768px) {
+        .container-gallery .gallery-wrapper .gallery-content {
+          grid-template-columns: repeat(2, 1fr); } }
+      @media screen and (max-width: 576px) {
+        .container-gallery .gallery-wrapper .gallery-content {
+          justify-content: center;
+          grid-template-columns: repeat(1, minmax(200px, 350px)); } }
+      .container-gallery .gallery-wrapper .gallery-content .img-item {
+        object-fit: cover;
+        object-position: 50% 50%; }
+        .container-gallery .gallery-wrapper .gallery-content .img-item img {
+          max-width: 100%;
+          height: 100%; }
+
+.container-span_2 {
+  width: 100%;
+  background-color: #e5e5e5; }
+  .container-span_2 .span_2-wrapper {
+    max-width: 1140px;
+    padding: 3rem;
+    margin: 0 auto;
+    display: flex; }
+    @media screen and (max-width: 992px) {
+      .container-span_2 .span_2-wrapper {
+        padding: 3rem 1rem; } }
+    @media screen and (max-width: 768px) {
+      .container-span_2 .span_2-wrapper {
+        flex-direction: column;
+        padding: 3rem; } }
+    @media screen and (max-width: 576px) {
+      .container-span_2 .span_2-wrapper {
+        padding: 1rem; } }
+    .container-span_2 .span_2-wrapper .span_2-content {
+      flex: 5;
+      min-height: 540px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column; }
+      .container-span_2 .span_2-wrapper .span_2-content h3 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 2.25rem;
+        color: #111111;
+        line-height: 1.1; }
+      .container-span_2 .span_2-wrapper .span_2-content .line {
+        width: 300px;
+        height: 12px;
+        background-color: #6a4aa1;
+        margin: 2rem 0; }
+      .container-span_2 .span_2-wrapper .span_2-content p {
+        font-family: "Open Sans", sans-serif;
+        text-align: justify;
+        color: #111111; }
+      .container-span_2 .span_2-wrapper .span_2-content .btn {
+        margin-top: 2rem;
+        width: fit-content;
+        background-color: #6a4aa1;
+        color: #ffffff;
+        cursor: pointer; }
+        .container-span_2 .span_2-wrapper .span_2-content .btn:hover {
+          background-color: #4d4d4d; }
+    .container-span_2 .span_2-wrapper .span_2-img {
+      flex: 5;
+      display: flex;
+      flex-direction: column;
+      padding: 3rem;
+      background-color: #ffffff; }
+      @media screen and (max-width: 420px) {
+        .container-span_2 .span_2-wrapper .span_2-img {
+          padding: 1rem; } }
+      .container-span_2 .span_2-wrapper .span_2-img .img {
+        background-image: url("../../assets/fitness.jpg");
+        background-position: 50% 50%;
+        background-size: cover;
+        border: 1px solid black;
+        height: 300px; }
+      .container-span_2 .span_2-wrapper .span_2-img p {
+        margin-top: 3rem;
+        font-family: "Open Sans", sans-serif;
+        color: #111111;
+        line-height: 1.1;
+        text-align: justify; }
+
+.container-about {
+  width: 100%; }
+  .container-about .about-wrapper {
+    max-width: 1140px;
+    padding: 3rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; }
+    @media screen and (max-width: 576px) {
+      .container-about .about-wrapper {
+        padding: 1rem; } }
+    .container-about .about-wrapper .about-title h3 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 3rem;
+      color: #6a4aa1;
+      margin: 3rem 0 1rem 0;
+      text-align: left; }
+    .container-about .about-wrapper .about-content {
+      background-color: #e5e5e5;
+      display: flex; }
+      @media screen and (max-width: 768px) {
+        .container-about .about-wrapper .about-content {
+          flex-direction: column; } }
+      .container-about .about-wrapper .about-content .about-text {
+        flex: 7;
+        padding: 2rem; }
+        .container-about .about-wrapper .about-content .about-text p {
+          font-size: 1.25rem;
+          line-height: 2; }
+          @media screen and (max-width: 576px) {
+            .container-about .about-wrapper .about-content .about-text p {
+              line-height: 1.3; } }
+        .container-about .about-wrapper .about-content .about-text .text-2 {
+          margin-top: 2rem;
+          font-weight: 700; }
+      .container-about .about-wrapper .about-content .about-redes {
+        flex: 3;
+        background-color: #6a4aa1;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        @media screen and (max-width: 768px) {
+          .container-about .about-wrapper .about-content .about-redes {
+            padding: 2rem; } }
+        .container-about .about-wrapper .about-content .about-redes img {
+          width: 45px;
+          height: 45px; }
+
+.footer_container {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000; }
+  .footer_container h2 {
+    font-family: "Montserrat", sans-serif;
+    color: #6a4aa1;
+    font-weight: 400;
+    font-size: 18px; }
